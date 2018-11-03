@@ -259,6 +259,7 @@ footer .cv-pdf i:hover {
 .progress{
     position: relative;
     height: 25px;
+    margin: 15px;
 }
 
 .progress-type{
