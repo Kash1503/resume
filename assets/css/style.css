@@ -2,9 +2,16 @@
 
 /*-----------------------------------------------------colours*/
 
+body {
+    background-color: #525252;
+}
+
 .bg-color-name-title {
     background-color: #676767;
+}
 
+.bg-color-three-reasons {
+    background-color: #ffffff;
 }
 
 .ui-menu-color-home {
@@ -21,6 +28,14 @@
 
 .ui-menu-color-download {
     background-color: #525252;
+}
+
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
+
+.bg-color-work-history{
+    background-color: #ff77fb;
 }
 
 /*-----------------------------------------------------special paddings/margin/text*/
@@ -44,6 +59,18 @@ h4 {
 
 .inline-block {
     display: inline-block;
+}
+
+.row-table {
+    display: table;
+}
+
+.history-heading,
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-bottom: 40px;
+    margin-top: 25px;
 }
 
 /*-----------------------------------------------------header*/
@@ -168,7 +195,7 @@ footer .cv-pdf i:hover {
     color: #e84610;
 }
 
-#footer-details{
+#footer-details {
     margin: 20px;
 }
 
@@ -177,4 +204,126 @@ footer .cv-pdf i:hover {
 .hvr-sweep-to-bottom:before {
     background-color: rgba(0, 0, 0, 0.2);
     height: 120px;
+}
+
+/*-----------------------------------------------------Three reasons*/
+
+.three-reasons-icon {
+    color: #ffa93e;
+    font-size: 26px;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+/*-----------------------------------------------------Personal Info*/
+
+.personal-info-item{
+    margin-bottom: 20px;
+    padding-left: 15px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value{
+    padding-right: 8px;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p{
+    margin: 0;
+}
+
+.personal-info-item .key{
+    vertical-align: top;
+    width: 30%;
+    margin-right: 21px;
+    padding-right: 2px;
+    display: inline-block;
+}
+
+.personal-info-item .key p{
+    font-weight: 700;
+}
+
+.personal-info-item .value{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+}
+
+/*-----------------------------------------------------Skills*/
+
+.progress{
+    position: relative;
+    height: 25px;
+}
+
+.progress-type{
+    position: absolute;
+    font-weight: 400;
+    color: #fafafa;
+    background-color: rgba(25,25,25,0.2);
+    left: 0px;
+    padding: 3px 30px 2px 10px;
+}
+
+/*-----------------------------------------------------History*/
+
+.timeline-item{
+    padding: 4em 2em 0em 2em;
+    color: #fafafa;
+    border-left: 1px solid;
+    position: relative;
+}
+
+.timeline-item p{
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::before{
+    content: attr(dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::after{
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items{
+    margin-bottom: 25px;
+}
+
+.history-heading{
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+/*-----------------------------------------------------Media Queries*/
+
+@media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
 }
