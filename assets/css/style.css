@@ -30,6 +30,14 @@ body {
     background-color: #525252;
 }
 
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
 .bg-color-personal-info {
     background-color: #f4f4f4;
 }
@@ -39,6 +47,14 @@ body {
 }
 
 .bg-color-contact {
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
     background-color: #ffffff;
 }
 
@@ -352,7 +368,7 @@ button[type="submit"]:hover {
     color: #fafafa;
 }
 
-button[type="submit"]:focus {
+button[type="submit"]: {
     background-color: #5d90ce;
     border-color: #5d90ce;
     color: #fafafa;
