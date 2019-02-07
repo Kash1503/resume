@@ -21,7 +21,7 @@ function repoInformationHTML(repos){
         return `<div class ="clearfix repo-list">No Repos!</div>`;
     }
     
-    var listItemsHTML = repo.map(function(repo) {
+    var listItemsHTML = repos.map(function(repo) {
         return `<li>
                     <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                 </li>`;
@@ -32,12 +32,15 @@ function repoInformationHTML(repos){
                     <strong>Repo List:</strong>
                 </p>
                 <ul>
-                    ${listItemsHTML.join("/n")}
+                    ${listItemsHTML.join("\n")}
                 </ul>
             </div>`
 }
 
 function fetchGitHubInformation(event){
+    
+    $("#gh-user-data").html("");
+    $("#gh-repo-data").html("");
     
     var username = $("#gh-username").val();
     
@@ -70,3 +73,5 @@ function fetchGitHubInformation(event){
         }
     )
 }
+
+$(document).ready(fetchGitHubInformation);
